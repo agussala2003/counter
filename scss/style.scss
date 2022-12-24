@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    .navContainer {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        align-items: center;
+        > a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .linksContainer {
+            display: flex;
+            gap: 50px;
+            a {
+                color: #000;
+                font-weight: 700;
+                text-decoration: none;
+                transition: 0.3s all ease-in;
+                &:hover
+                {
+                    color: #0000EE;
+                }
+            }
+        }
+    }
+}
+main {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .numberContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        p {
+            font-size: 150px;
+        }
+        .buttonsContaiener {
+            button {
+                width: 150px;
+                height: 50px;
+                font-size: 20px;
+                border-radius: 5px;
+                padding: 10px 25px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 500;
+                background: transparent;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                position: relative;
+                display: inline-block;
+                box-shadow: inset 2px 2px 2px 0px rgb(255 255 255 / 50%), 7px 7px 20px 0px rgb(0 0 0 / 10%), 4px 4px 5px 0px rgb(0 0 0 / 10%);
+                outline: none;
+                &:hover {
+                    font-weight: 600;
+                }
+            }
+        }
+        .inputContainer {
+            input {
+                width: 250px;
+                padding: 10px;
+                border-radius: 5px;
+                color: #000;
+            }
+            button {
+                width: 120px;
+                height: 40px;
+                font-size: 16px;
+                border-radius: 5px;
+                padding: 10px 25px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 500;
+                background: transparent;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                position: relative;
+                display: inline-block;
+                box-shadow: inset 2px 2px 2px 0px rgb(255 255 255 / 50%), 7px 7px 20px 0px rgb(0 0 0 / 10%), 4px 4px 5px 0px rgb(0 0 0 / 10%);
+                outline: none;
+                &:hover {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@media (max-width:480px) {
+    .buttonsContaiener {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .inputContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    main .numberContainer p {
+        font-size: 4rem;
+    }
+    main {
+        height: 90vh;
+    }
+}
